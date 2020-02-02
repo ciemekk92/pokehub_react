@@ -1,0 +1,35 @@
+/*https://colorhunt.co/palette/7247 << color palette */
+
+.Content {
+   background-color: #2d4059;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: calc(10px + 2vmin);
+   color: white;
+}
+
+.MainLogo {
+   margin: 1vh 0 1vh 0;
+   height: 20vmin;
+   pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+   .MainLogo {
+      animation: MainLogo-float infinite 6s linear;
+   }
+}
+
+@keyframes MainLogo-float {
+   from {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(5vh);
+   }
+   to {
+      transform: translateY(0);
+   }
+}
