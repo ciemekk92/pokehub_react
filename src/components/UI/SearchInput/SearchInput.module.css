@@ -1,0 +1,9 @@
+.SearchInput {
+   width: 50%;
+   height: 30px;
+   border-radius: 15px;
+   outline: none;
+   font-family: Roboto Condensed;
+   font-size: 14px;
+   text-align: center;
+}
