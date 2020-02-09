@@ -40,6 +40,20 @@ const Search = props => {
          });
    };
 
+   const randomGenerator = (min, max) => {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+   };
+
+   const randomHandler = () => {
+      axios
+         .get(`https://pokeapi.co/api/v2/pokemon/${randomGenerator(1, 807)}`)
+         .then(response => {
+            console.log(response.data);
+         });
+   };
+
    return (
       <React.Fragment>
          <SearchInput
@@ -51,7 +65,9 @@ const Search = props => {
             <Button clicked={searchHandler} btnType="Search">
                Search!
             </Button>
-            <Button btnType="Random">Random!</Button>
+            <Button clicked={randomHandler} btnType="Random">
+               Random!
+            </Button>
          </div>
       </React.Fragment>
    );
