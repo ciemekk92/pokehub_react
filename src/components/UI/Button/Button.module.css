@@ -18,16 +18,6 @@
    color: #ffd460;
 }
 
-.Random {
-   border-color: #ffd460;
-   color: #ffd460;
-}
-
-.Random:hover {
-   color: #ea5455;
-   border-color: #ea5455;
-}
-
 .Search:hover {
    color: #f07b3f;
    border-color: #f07b3f;

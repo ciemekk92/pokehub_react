@@ -4,7 +4,7 @@ import classes from './SearchInput.module.css';
 const SearchInput = props => (
    <React.Fragment>
       <p style={{ textAlign: 'center', marginTop: '5%' }}>
-         Search any Pokemon by name or by its Pokedex (old) number!
+         Search any Pokemon by name or by its National Pokedex number!
       </p>
       <input
          className={classes.SearchInput}

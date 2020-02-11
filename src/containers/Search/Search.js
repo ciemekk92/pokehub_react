@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import Button from '../../components/UI/Button/Button';
 import SearchInput from '../../components/UI/SearchInput/SearchInput';
+import { connect } from 'react-redux';
+import * as actions from '../../store/actions/index';
 
 const Search = props => {
    const [searchQuery, setSearchQuery] = useState({
@@ -10,7 +11,7 @@ const Search = props => {
    });
 
    // TBI - input validation
-   const checkValidity = value => {
+   /* const checkValidity = value => {
       let isValid = true;
       if (
          (typeof value === 'number' && value.length <= 3 && value.length > 0) ||
@@ -21,23 +22,15 @@ const Search = props => {
          isValid = false;
       }
       return isValid;
-   };
+   }; */
 
    const inputChangedHandler = event => {
       setSearchQuery({ value: event.target.value });
    };
 
-   const inputHandler = event => {
-      event.preventDefault();
-      // ... Code for dispatching search
-   };
-
    const searchHandler = () => {
-      axios
-         .get(`https://pokeapi.co/api/v2/pokemon/${searchQuery.value}`)
-         .then(response => {
-            console.log(response.data);
-         });
+      // from redux
+      props.onSearch(searchQuery.value);
    };
 
    const randomGenerator = (min, max) => {
@@ -47,11 +40,7 @@ const Search = props => {
    };
 
    const randomHandler = () => {
-      axios
-         .get(`https://pokeapi.co/api/v2/pokemon/${randomGenerator(1, 807)}`)
-         .then(response => {
-            console.log(response.data);
-         });
+      props.onSearch(randomGenerator(1, 807));
    };
 
    return (
@@ -65,7 +54,7 @@ const Search = props => {
             <Button clicked={searchHandler} btnType="Search">
                Search!
             </Button>
-            <Button clicked={randomHandler} btnType="Random">
+            <Button clicked={randomHandler} btnType="Search">
                Random!
             </Button>
          </div>
@@ -73,4 +62,18 @@ const Search = props => {
    );
 };
 
-export default Search;
+const mapStateToProps = state => {
+   return {
+      id: state.result.id,
+      name: state.result.name,
+      sprite: state.result.sprite,
+      types: state.result.types
+   };
+};
+
+const mapDispatchToProps = dispatch => {
+   return {
+      onSearch: query => dispatch(actions.initResult(query))
+   };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Search);
