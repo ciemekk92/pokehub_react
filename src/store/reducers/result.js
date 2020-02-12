@@ -7,7 +7,8 @@ const initialState = {
    types: [],
    sprite: '',
    error: false,
-   loading: false
+   loading: false,
+   displayBox: 'none'
 };
 
 const setResult = (state, action) => {
@@ -15,7 +16,8 @@ const setResult = (state, action) => {
       id: action.result.id,
       name: action.result.name,
       types: action.result.types,
-      sprite: action.result.sprites.front_default
+      sprite: action.result.sprites.front_default,
+      displayBox: 'block'
    });
 };
 

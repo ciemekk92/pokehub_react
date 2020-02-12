@@ -1,6 +1,29 @@
 .Box {
    background-color: white;
-   width: 60%;
+   width: 50%;
    border-radius: 15px;
    margin-top: 3vh;
+}
+
+/* Small PCs */
+
+@media only screen and (max-width: 1023px) {
+   .Box {
+      width: 70%;
+   }
+}
+
+/* Ipad portrait */
+
+@media only screen and (max-width: 1023px) {
+   .Box {
+      width: 80%;
+   }
+}
+
+/* less than Ipad */
+@media only screen and (max-width: 767px) {
+   .Box {
+      width: 90%;
+   }
 }

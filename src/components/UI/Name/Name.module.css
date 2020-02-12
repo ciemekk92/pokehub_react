@@ -1,0 +1,10 @@
+.Name {
+   background-color: #ccc;
+   margin-top: 0;
+   padding-top: 0;
+   flex-grow: 1;
+}
+
+.Name p {
+   text-align: center;
+}
