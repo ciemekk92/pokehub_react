@@ -26,16 +26,10 @@ const Result = props => {
    return (
       <React.Fragment>
          <div className={classes.Box} style={{ display: props.displayBox }}>
-            <div
-               style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  alignItems: 'center'
-               }}
-            >
+            <div className={classes.BoxRow}>
                <Image imageSource={props.sprite} />
-               <Name value={capitalizeFirstLetter(props.name)} />
-               <Name value={props.id} />
+               <Name type="Name" value={capitalizeFirstLetter(props.name)} />
+               <Name type="ID" value={props.id} />
             </div>
             <Paragraph>{splitTypes(props.types).join(' ')}</Paragraph>
          </div>

@@ -1,10 +1,8 @@
 .Name {
-   background-color: #ccc;
-   margin-top: 0;
+   background-color: #f07b3f;
+   color: #ffd460;
+   margin: 0 10px;
    padding-top: 0;
-   flex-grow: 1;
-}
-
-.Name p {
-   text-align: center;
+   flex-grow: 2;
+   border-radius: 15px;
 }

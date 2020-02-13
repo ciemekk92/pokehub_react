@@ -1,8 +1,14 @@
 .Box {
-   background-color: white;
+   background-color: #ea5455;
    width: 50%;
    border-radius: 15px;
    margin-top: 3vh;
+}
+
+.BoxRow {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
 }
 
 /* Small PCs */
