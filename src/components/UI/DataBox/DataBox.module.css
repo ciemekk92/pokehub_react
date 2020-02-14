@@ -1,0 +1,8 @@
+.DataBox {
+   background-color: #fff288;
+   color: black;
+   margin: 0 10px 0 0;
+   padding-top: 0;
+   flex-grow: 2;
+   border-radius: 15px;
+}

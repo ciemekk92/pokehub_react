@@ -1,8 +1,8 @@
 import React from 'react';
-import classes from './Name.module.css';
+import classes from './DataBox.module.css';
 import styled from 'styled-components';
 
-const Name = props => {
+const DataBox = props => {
    const ParagraphType = styled.p`
       margin: 2px 0 0 5px;
       font-size: 10px;
@@ -15,11 +15,11 @@ const Name = props => {
       margin: 0;
    `;
    return (
-      <div className={classes.Name}>
+      <div className={classes.DataBox}>
          <ParagraphType>{props.type}</ParagraphType>
          <ParagraphValue>{props.value}</ParagraphValue>
       </div>
    );
 };
 
-export default Name;
+export default DataBox;

@@ -1,0 +1,12 @@
+.TypesBox {
+   background-color: #fff288;
+   color: black;
+   margin: 0 10px 10px 10px;
+   padding-top: 0;
+   flex-grow: 1;
+   border-radius: 15px;
+}
+
+.Fire {
+   color: red;
+}

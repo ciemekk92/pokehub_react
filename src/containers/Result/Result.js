@@ -1,14 +1,10 @@
 import React from 'react';
 import classes from './Result.module.css';
 import Image from '../../components/Result/Image/Image';
-import Name from '../../components/UI/Name/Name';
+import DataBox from '../../components/UI/DataBox/DataBox';
+import TypesBox from '../../components/UI/TypesBox/TypesBox';
 import { connect } from 'react-redux';
-import styled from 'styled-components';
-
-const Paragraph = styled.p`
-   color: black;
-   text-align: center;
-`;
+import { capitalizeFirstLetter } from '../../shared/utility';
 
 const splitTypes = array => {
    const typesArray = [];
@@ -18,20 +14,20 @@ const splitTypes = array => {
    return typesArray;
 };
 
-const capitalizeFirstLetter = string => {
-   return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
 const Result = props => {
+   let typesIterable = splitTypes(props.types).map(element => (
+      <TypesBox type="Type" value={capitalizeFirstLetter(element)} />
+   ));
+
    return (
       <React.Fragment>
          <div className={classes.Box} style={{ display: props.displayBox }}>
             <div className={classes.BoxRow}>
                <Image imageSource={props.sprite} />
-               <Name type="Name" value={capitalizeFirstLetter(props.name)} />
-               <Name type="ID" value={props.id} />
+               <DataBox type="Name" value={capitalizeFirstLetter(props.name)} />
+               <DataBox type="ID" value={props.id} />
             </div>
-            <Paragraph>{splitTypes(props.types).join(' ')}</Paragraph>
+            <div className={classes.BoxRow}>{typesIterable}</div>
          </div>
       </React.Fragment>
    );
