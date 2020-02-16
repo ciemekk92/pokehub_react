@@ -4,8 +4,12 @@ import { updateObject } from '../../shared/utility';
 const initialState = {
    id: null,
    name: '',
+   spriteFront: '',
+   spriteBack: '',
    types: [],
-   sprite: '',
+   height: null,
+   weight: null,
+   baseExperience: null,
    error: false,
    loading: false,
    displayBox: 'none'
@@ -15,8 +19,12 @@ const setResult = (state, action) => {
    return updateObject(state, {
       id: action.result.id,
       name: action.result.name,
+      spriteFront: action.result.sprites.front_default,
+      spriteBack: action.result.sprites.back_default,
       types: action.result.types,
-      sprite: action.result.sprites.front_default,
+      height: action.result.height,
+      weight: action.result.weight,
+      baseExperience: action.result.base_experience,
       displayBox: 'block'
    });
 };

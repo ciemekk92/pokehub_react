@@ -1,5 +1,6 @@
 .ImageBox {
-   margin: 10px;
+   margin: 10px 5px 0 10px;
+   border-right: 2px solid white;
 }
 
 .Image {

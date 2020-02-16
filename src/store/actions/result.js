@@ -20,6 +20,7 @@ export const initResult = query => {
          .get(`https://pokeapi.co/api/v2/pokemon/${query}`)
          .then(response => {
             dispatch(setResult(response.data));
+            console.log(response.data);
          })
          .catch(error => {
             dispatch(fetchResultFailed());

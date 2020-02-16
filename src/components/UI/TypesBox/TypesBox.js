@@ -15,7 +15,7 @@ const TypesBox = props => {
       margin: 0;
    `;
    return (
-      <div className={classes.TypesBox}>
+      <div className={`${classes.TypesBox} ${classes[props.value]}`}>
          <ParagraphType>{props.type}</ParagraphType>
          <ParagraphValue>{props.value}</ParagraphValue>
       </div>

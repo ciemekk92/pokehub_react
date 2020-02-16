@@ -16,18 +16,37 @@ const splitTypes = array => {
 
 const Result = props => {
    let typesIterable = splitTypes(props.types).map(element => (
-      <TypesBox type="Type" value={capitalizeFirstLetter(element)} />
+      <TypesBox
+         key={capitalizeFirstLetter(element)}
+         type="Type"
+         value={capitalizeFirstLetter(element)}
+      />
    ));
 
    return (
       <React.Fragment>
          <div className={classes.Box} style={{ display: props.displayBox }}>
             <div className={classes.BoxRow}>
-               <Image imageSource={props.sprite} />
-               <DataBox type="Name" value={capitalizeFirstLetter(props.name)} />
-               <DataBox type="ID" value={props.id} />
+               <Image type={'Front'} imageSource={props.spriteFront} />
+               {props.spriteBack ? (
+                  <Image type={'Back'} imageSource={props.spriteBack} />
+               ) : null}
+               <div className={classes.BoxColumn}>
+                  <div className={classes.BoxRow}>
+                     <DataBox
+                        type="Name"
+                        value={capitalizeFirstLetter(props.name)}
+                     />
+                     <DataBox type="ID" value={'#' + props.id} />
+                  </div>
+                  <div className={classes.BoxRowTypes}>{typesIterable}</div>
+               </div>
             </div>
-            <div className={classes.BoxRow}>{typesIterable}</div>
+            <div className={classes.BoxRow}>
+               <DataBox type="Height" value={props.height / 10 + ' m'} />
+               <DataBox type="Weight" value={props.weight / 10 + ' kg'} />
+               <DataBox type="Base Experience" value={props.baseExperience} />
+            </div>
          </div>
       </React.Fragment>
    );
@@ -37,8 +56,12 @@ const mapStateToProps = state => {
    return {
       id: state.result.id,
       name: state.result.name,
-      sprite: state.result.sprite,
+      spriteFront: state.result.spriteFront,
+      spriteBack: state.result.spriteBack,
       types: state.result.types,
+      height: state.result.height,
+      weight: state.result.weight,
+      baseExperience: state.result.baseExperience,
       displayBox: state.result.displayBox
    };
 };
