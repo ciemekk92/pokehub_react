@@ -1,0 +1,39 @@
+.StatBox {
+   background-color: white;
+   color: black;
+   margin: 10px 20px 10px 0;
+   flex-basis: 50%;
+   height: 6vh;
+   border-radius: 15px;
+   border: 2px solid #ccc;
+}
+
+.Hp {
+   background-color: red;
+   border-color: #c00;
+}
+
+.Attack {
+   background-color: #f08030;
+   border-color: #dd6510;
+}
+
+.Defense {
+   background-color: #f8d030;
+   border-color: #edbf08;
+}
+
+.Special-attack {
+   background-color: #6890f0;
+   border-color: #3a6eeb;
+}
+
+.Special-defense {
+   background-color: #78c850;
+   border-color: #58a133;
+}
+
+.Speed {
+   background-color: #f85888;
+   border-color: #f62765;
+}

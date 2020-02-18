@@ -5,7 +5,7 @@ Powered by: PokeAPI (https://pokeapi.co/).
 
 ## Tech stack:
 
--  React
+-  React 16.12
 -  Redux
 -  Styled Components
 -  CSS Modules
@@ -14,8 +14,9 @@ Powered by: PokeAPI (https://pokeapi.co/).
 
 -  Pokemon Abilities
 -  Pokemon Moves
--  Pokemon Base Stats
+-  Pokemon Base Stats - in progress, styling to be adjusted
 
+-  Converting input to lowercase
 -  Input Validation
 -  Responsive Mobile Design
 

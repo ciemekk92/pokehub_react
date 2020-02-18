@@ -3,6 +3,7 @@ import classes from './Result.module.css';
 import Image from '../../components/Result/Image/Image';
 import DataBox from '../../components/UI/DataBox/DataBox';
 import TypesBox from '../../components/UI/TypesBox/TypesBox';
+import StatBox from '../../components/UI/StatBox/StatBox';
 import { connect } from 'react-redux';
 import { capitalizeFirstLetter } from '../../shared/utility';
 
@@ -22,6 +23,15 @@ const Result = props => {
          value={capitalizeFirstLetter(element)}
       />
    ));
+   let baseStats = props.stats
+      .map(element => (
+         <StatBox
+            key={element.stat.name}
+            type={capitalizeFirstLetter(element.stat.name)}
+            value={element.base_stat}
+         />
+      ))
+      .reverse();
 
    return (
       <React.Fragment>
@@ -47,6 +57,7 @@ const Result = props => {
                <DataBox type="Weight" value={props.weight / 10 + ' kg'} />
                <DataBox type="Base Experience" value={props.baseExperience} />
             </div>
+            <div className={classes.BoxRow}>{baseStats}</div>
          </div>
       </React.Fragment>
    );
@@ -61,6 +72,7 @@ const mapStateToProps = state => {
       types: state.result.types,
       height: state.result.height,
       weight: state.result.weight,
+      stats: state.result.stats,
       baseExperience: state.result.baseExperience,
       displayBox: state.result.displayBox
    };
