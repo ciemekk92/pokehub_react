@@ -29,7 +29,6 @@ const Search = props => {
    };
 
    const searchHandler = () => {
-      // from redux
       props.onSearch(searchQuery.value);
    };
 
@@ -62,18 +61,10 @@ const Search = props => {
    );
 };
 
-const mapStateToProps = state => {
-   return {
-      id: state.result.id,
-      name: state.result.name,
-      sprite: state.result.sprite,
-      types: state.result.types
-   };
-};
-
 const mapDispatchToProps = dispatch => {
    return {
       onSearch: query => dispatch(actions.initResult(query))
    };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(Search);
+
+export default connect(null, mapDispatchToProps)(Search);
