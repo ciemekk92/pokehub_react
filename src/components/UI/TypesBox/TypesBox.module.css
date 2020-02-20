@@ -2,9 +2,10 @@
    font-size: 16px;
    color: black;
    margin: 10px 20px 10px 0;
-   width: 25%;
    border-radius: 15px;
+   width: 90%;
    border: 2px solid white;
+   box-shadow: 3px 3px 5px 0px rgb(44, 44, 44);
 }
 
 .Normal {

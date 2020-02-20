@@ -6,25 +6,19 @@
 }
 
 .BoxColumn {
-   width: 100%;
    display: flex;
    flex-direction: column;
    align-items: center;
+   width: 100%;
 }
 
 .BoxRow {
    width: 100%;
+   height: 150px;
    display: flex;
    flex-direction: row;
    align-items: center;
    margin: 0 10px;
-}
-
-.BoxRowTypes {
-   width: 100%;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
 }
 
 /* Small PCs */

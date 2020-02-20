@@ -11,13 +11,15 @@ const Types = props => {
       }
       return typesArray;
    };
-   let typesIterable = splitTypes(props.types).map(element => (
-      <TypesBox
-         key={capitalizeFirstLetter(element)}
-         type="Type"
-         value={capitalizeFirstLetter(element)}
-      />
-   ));
+   let typesIterable = splitTypes(props.types)
+      .reverse()
+      .map(element => (
+         <TypesBox
+            key={capitalizeFirstLetter(element)}
+            type="Type"
+            value={capitalizeFirstLetter(element)}
+         />
+      ));
    return typesIterable;
 };
 

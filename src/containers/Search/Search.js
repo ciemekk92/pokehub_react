@@ -29,7 +29,7 @@ const Search = props => {
    };
 
    const searchHandler = () => {
-      props.onSearch(searchQuery.value);
+      props.onSearch(searchQuery.value.toLowerCase());
    };
 
    const randomGenerator = (min, max) => {

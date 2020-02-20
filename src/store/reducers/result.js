@@ -11,6 +11,7 @@ const initialState = {
    weight: null,
    stats: [],
    baseExperience: null,
+   abilities: [],
    error: false,
    loading: false,
    displayBox: 'none'
@@ -27,6 +28,7 @@ const setResult = (state, action) => {
       weight: action.result.weight,
       stats: action.result.stats,
       baseExperience: action.result.base_experience,
+      abilities: action.result.abilities,
       displayBox: 'block'
    });
 };
