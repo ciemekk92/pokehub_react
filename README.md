@@ -12,9 +12,8 @@ Powered by: PokeAPI (https://pokeapi.co/).
 
 ## TO-DO
 
--  Pokemon Abilities
 -  Pokemon Moves
--  Pokemon Base Stats - in progress, styling to be adjusted
+-  Pokemon Base Stats - in progress, value bar to be added
 
 -  Input Validation
 -  Responsive Mobile Design

@@ -1,14 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import classes from './Metrics.module.css';
 import DataBox from '../../components/UI/DataBox/DataBox';
 
 const Metrics = props => {
    return (
-      <React.Fragment>
+      <div className={classes.Container}>
          <DataBox type="Height" value={props.height / 10 + ' m'} />
          <DataBox type="Weight" value={props.weight / 10 + ' kg'} />
          <DataBox type="Base Experience" value={props.baseExperience} />
-      </React.Fragment>
+      </div>
    );
 };
 

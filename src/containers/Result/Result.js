@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { CSSTransition } from 'react-transition-group';
 import classes from './Result.module.css';
 import Metrics from '../Metrics/Metrics';
 import Sprites from '../Sprites/Sprites';
@@ -24,16 +25,10 @@ const Result = props => {
          </div>
          <div className={classes.BoxRow}>
             <div className={classes.BoxColumn}>
-               <div className={classes.BoxRow}>
-                  <Abilities />
-               </div>
-               <div className={classes.BoxRow}>
-                  <Metrics />
-               </div>
+               <Abilities />
+               <Metrics />
             </div>
-            <div className={classes.BoxColumn}>
-               <Types />
-            </div>
+            <Types />
          </div>
          <div className={classes.BoxRow}>
             <Stats />

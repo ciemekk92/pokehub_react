@@ -2,10 +2,11 @@
    background-color: #ff9f3b;
    color: black;
    margin: 10px 20px 10px 0;
-   flex-basis: 100%;
+   width: 33%;
    height: 6vh;
    border-radius: 15px;
    box-shadow: 3px 3px 5px 0px rgba(44, 44, 44, 1);
+   font-family: 'Roboto Condensed';
 }
 
 .Type {
@@ -16,16 +17,17 @@
 }
 
 .Value {
-   font-size: 24px;
+   font-size: 14px;
    text-align: center;
    font-weight: 500;
-   margin: auto;
+   margin: 5px 0 0 0;
 }
 
 .Hidden {
    font-size: 10px;
    text-align: center;
    flex: none;
+   margin-top: -2%;
 }
 
 /* Small PCs */

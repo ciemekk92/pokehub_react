@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import classes from './Types.module.css';
 import TypesBox from '../../components/UI/TypesBox/TypesBox';
 import { capitalizeFirstLetter } from '../../shared/utility';
 
@@ -20,7 +21,7 @@ const Types = props => {
             value={capitalizeFirstLetter(element)}
          />
       ));
-   return typesIterable;
+   return <div className={classes.Container}>{typesIterable}</div>;
 };
 
 const mapStateToProps = state => {
