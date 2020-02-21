@@ -1,7 +1,13 @@
-/*https://colorhunt.co/palette/7247 << color palette */
+/* color palette
+#272727 - dark grey
+#747474 - light grey
+#FF652F - orange
+#FFE400 - yellow
+#14A76C - turqoise
+*/
 
 .Content {
-   background-color: #2d4059;
+   background-color: #272727;
    min-height: 100vh;
    display: flex;
    flex-direction: column;

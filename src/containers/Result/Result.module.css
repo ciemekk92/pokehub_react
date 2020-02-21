@@ -1,0 +1,45 @@
+.Box {
+   background-color: #747474;
+   width: 50%;
+   border-radius: 15px;
+   margin-top: 3vh;
+}
+
+.BoxColumn {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+}
+
+.BoxRow {
+   width: 100%;
+   height: 150px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin: 0 10px;
+}
+
+/* Small PCs */
+
+@media only screen and (max-width: 1200px) {
+   .Box {
+      width: 70%;
+   }
+}
+
+/* Ipad portrait */
+
+@media only screen and (max-width: 1023px) {
+   .Box {
+      width: 80%;
+   }
+}
+
+/* less than Ipad */
+@media only screen and (max-width: 767px) {
+   .Box {
+      width: 90%;
+   }
+}
