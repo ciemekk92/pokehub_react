@@ -12,9 +12,10 @@ const initialState = {
    stats: [],
    baseExperience: null,
    abilities: [],
+   moves: [],
+   displayResult: false,
    error: false,
-   loading: false,
-   displayBox: 'none'
+   loading: false
 };
 
 const setResult = (state, action) => {
@@ -29,7 +30,14 @@ const setResult = (state, action) => {
       stats: action.result.stats,
       baseExperience: action.result.base_experience,
       abilities: action.result.abilities,
-      displayBox: 'block'
+      moves: action.result.moves,
+      displayResult: true
+   });
+};
+
+const resetBox = (state, action) => {
+   return updateObject(state, {
+      displayResult: false
    });
 };
 
@@ -43,6 +51,8 @@ const reducer = (state = initialState, action) => {
          return setResult(state, action);
       case actionTypes.FETCH_RESULT_FAILED:
          return fetchResultFailed(state, action);
+      case actionTypes.RESET_BOX:
+         return resetBox(state, action);
       default:
          return state;
    }

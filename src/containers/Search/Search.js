@@ -29,7 +29,11 @@ const Search = props => {
    };
 
    const searchHandler = () => {
-      props.onSearch(searchQuery.value.toLowerCase());
+      if (!props.displayResult) {
+         props.onSearch(searchQuery.value.toLowerCase());
+      } else {
+         props.onNext(searchQuery.value.toLowerCase());
+      }
    };
 
    const randomGenerator = (min, max) => {
@@ -39,7 +43,11 @@ const Search = props => {
    };
 
    const randomHandler = () => {
-      props.onSearch(randomGenerator(1, 807));
+      if (!props.displayResult) {
+         props.onSearch(randomGenerator(1, 807));
+      } else {
+         props.onNext(randomGenerator(1, 807));
+      }
    };
 
    return (
@@ -61,10 +69,17 @@ const Search = props => {
    );
 };
 
-const mapDispatchToProps = dispatch => {
+const mapStateToProps = state => {
    return {
-      onSearch: query => dispatch(actions.initResult(query))
+      displayResult: state.result.displayResult
    };
 };
 
-export default connect(null, mapDispatchToProps)(Search);
+const mapDispatchToProps = dispatch => {
+   return {
+      onSearch: query => dispatch(actions.initResult(query)),
+      onNext: query => dispatch(actions.nextResult(query))
+   };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Search));

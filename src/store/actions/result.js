@@ -8,9 +8,30 @@ export const setResult = result => {
    };
 };
 
+export const resetBox = () => {
+   return {
+      type: actionTypes.RESET_BOX
+   };
+};
+
+export const enableBox = () => {
+   return {
+      type: actionTypes.ENABLE_BOX
+   };
+};
+
 export const fetchResultFailed = () => {
    return {
       type: actionTypes.FETCH_RESULT_FAILED
+   };
+};
+
+export const nextResult = query => {
+   return dispatch => {
+      dispatch(resetBox());
+      setTimeout(() => {
+         dispatch(initResult(query));
+      }, 1000);
    };
 };
 
