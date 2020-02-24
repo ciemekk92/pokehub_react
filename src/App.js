@@ -2,7 +2,6 @@ import React from 'react';
 import Layout from './hoc/Layout/Layout';
 import Search from './containers/Search/Search';
 import Result from './containers/Result/Result';
-import { Transition } from 'react-transition-group';
 import { connect } from 'react-redux';
 
 const App = props => {

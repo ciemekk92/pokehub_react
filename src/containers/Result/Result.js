@@ -10,12 +10,6 @@ import Stats from '../Stats/Stats';
 import Types from '../Types/Types';
 import NameId from '../NameId/NameId';
 
-const VerticalDivider = styled.div`
-   width: 3px;
-   height: 80%;
-   background-color: white;
-`;
-
 const Result = props => {
    return (
       <Transition in={props.displayResult} timeout={300} mountOnEnter>

@@ -20,9 +20,10 @@ export const enableBox = () => {
    };
 };
 
-export const fetchResultFailed = () => {
+export const fetchResultFailed = error => {
    return {
-      type: actionTypes.FETCH_RESULT_FAILED
+      type: actionTypes.FETCH_RESULT_FAILED,
+      error: error
    };
 };
 
@@ -44,7 +45,7 @@ export const initResult = query => {
             console.log(response.data);
          })
          .catch(error => {
-            dispatch(fetchResultFailed());
+            dispatch(fetchResultFailed(error));
          });
    };
 };
