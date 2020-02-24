@@ -49,11 +49,11 @@ export const initResult = query => {
          .get(`https://pokeapi.co/api/v2/pokemon/${query}`)
          .then(response => {
             dispatch(disableLoading());
-            setTimeout(() => {
-               dispatch(setResult(response.data));
-            }, 100);
-
-            console.log(response.data);
+            if (response.data.sprites.front_default) {
+               setTimeout(() => {
+                  dispatch(setResult(response.data));
+               }, 100);
+            }
          })
          .catch(error => {
             dispatch(fetchResultFailed(error));
