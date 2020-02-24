@@ -14,9 +14,15 @@ export const resetBox = () => {
    };
 };
 
-export const enableBox = () => {
+export const enableLoading = () => {
    return {
-      type: actionTypes.ENABLE_BOX
+      type: actionTypes.ENABLE_LOADING
+   };
+};
+
+export const disableLoading = () => {
+   return {
+      type: actionTypes.DISABLE_LOADING
    };
 };
 
@@ -38,10 +44,15 @@ export const nextResult = query => {
 
 export const initResult = query => {
    return dispatch => {
+      dispatch(enableLoading());
       axios
          .get(`https://pokeapi.co/api/v2/pokemon/${query}`)
          .then(response => {
-            dispatch(setResult(response.data));
+            dispatch(disableLoading());
+            setTimeout(() => {
+               dispatch(setResult(response.data));
+            }, 100);
+
             console.log(response.data);
          })
          .catch(error => {

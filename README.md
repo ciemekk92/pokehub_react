@@ -16,8 +16,6 @@ Powered by: PokeAPI (https://pokeapi.co/).
 -  Pokemon Moves
 -  Pokemon Base Stats - in progress, value bar to be added
 
--  Input Validation
--  Error Handling
 -  Responsive Mobile Design
 
 -  Landing components - info, how to use etc.

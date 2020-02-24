@@ -9,7 +9,7 @@ const SearchInput = props => (
       <input
          className={classes.SearchInput}
          onChange={props.changed}
-         placeholder={'Type in Pokemon name or id'}
+         placeholder={'Type in Pokemon name or ID'}
          value={props.value}
       ></input>
    </React.Fragment>

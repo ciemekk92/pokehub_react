@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Transition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import classes from './Result.module.css';

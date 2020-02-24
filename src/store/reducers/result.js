@@ -43,8 +43,23 @@ const resetBox = (state, action) => {
    });
 };
 
+const enableLoading = (state, action) => {
+   return updateObject(state, {
+      loading: true
+   });
+};
+
+const disableLoading = (state, action) => {
+   return updateObject(state, {
+      loading: false
+   });
+};
+
 const fetchResultFailed = (state, action) => {
-   return updateObject(state, { error: action.error });
+   return updateObject(state, {
+      error: action.error,
+      loading: false
+   });
 };
 
 const reducer = (state = initialState, action) => {
@@ -55,6 +70,10 @@ const reducer = (state = initialState, action) => {
          return fetchResultFailed(state, action);
       case actionTypes.RESET_BOX:
          return resetBox(state, action);
+      case actionTypes.ENABLE_LOADING:
+         return enableLoading(state, action);
+      case actionTypes.DISABLE_LOADING:
+         return disableLoading(state, action);
       default:
          return state;
    }

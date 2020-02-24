@@ -2,14 +2,19 @@ import React from 'react';
 import Layout from './hoc/Layout/Layout';
 import Search from './containers/Search/Search';
 import Result from './containers/Result/Result';
+import Spinner from './components/UI/Spinner/Spinner';
 import { connect } from 'react-redux';
 
 const App = props => {
+   let results = <Spinner />;
+   if (!props.loading) {
+      results = <Result />;
+   }
    return (
       <React.Fragment>
          <Layout>
             <Search />
-            <Result />
+            {results}
          </Layout>
       </React.Fragment>
    );
@@ -17,7 +22,8 @@ const App = props => {
 
 const mapStateToProps = state => {
    return {
-      displayResult: state.result.displayResult
+      displayResult: state.result.displayResult,
+      loading: state.result.loading
    };
 };
 
