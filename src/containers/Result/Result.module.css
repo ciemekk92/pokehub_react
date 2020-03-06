@@ -1,78 +1,81 @@
 .ResultOpen {
-   animation: openResult 0.3s ease-out;
+    animation: openResult 0.3s ease-out;
 }
 
 .ResultClosed {
-   animation: closeResult 0.3s ease-out;
+    animation: closeResult 0.3s ease-out;
 }
 
 .ResultNotVisible {
-   opacity: 0;
+    opacity: 0;
 }
 
 .ResultVisible {
-   opacity: 1;
+    opacity: 1;
 }
 
 @keyframes openResult {
-   0% {
-      opacity: 0;
-   }
-   100% {
-      opacity: 1;
-   }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes closeResult {
-   0% {
-      opacity: 1;
-   }
-   100% {
-      opacity: 0;
-   }
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 .Box {
-   background-color: #747474;
-   width: 50%;
-   border-radius: 15px;
-   margin-top: 3vh;
+    background-color: #747474;
+    width: 50%;
+    border-radius: 15px;
+    margin-top: 3vh;
+    box-sizing: border-box;
 }
 
 .BoxColumn {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .BoxRow {
-   width: 100%;
-   height: 150px;
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   margin: 0 10px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 10px;
+    box-sizing: border-box;
 }
 
 /* Small PCs */
 
 @media only screen and (max-width: 1200px) {
-   .Box {
-      width: 70%;
-   }
+    .Box {
+        width: 70%;
+    }
 }
 
 /* Ipad portrait */
 
 @media only screen and (max-width: 1023px) {
-   .Box {
-      width: 80%;
-   }
+    .Box {
+        width: 80%;
+    }
 }
 
 /* less than Ipad */
 @media only screen and (max-width: 767px) {
-   .Box {
-      width: 90%;
-   }
+    .Box {
+        width: 90%;
+    }
 }

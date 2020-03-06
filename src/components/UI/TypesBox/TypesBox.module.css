@@ -9,91 +9,199 @@
 }
 
 .Normal {
-   background-color: #a8a878;
+   background: rgb(168, 168, 120);
+   background: linear-gradient(
+      180deg,
+      rgba(168, 168, 120, 1) 0%,
+      rgba(143, 143, 99, 1) 50%,
+      rgba(168, 168, 120, 1) 100%
+   );
    border-color: #5d5d3c;
 }
 
 .Fighting {
-   background-color: #c03028;
+   background: rgb(192, 48, 40);
+   background: linear-gradient(
+      180deg,
+      rgba(192, 48, 40, 1) 0%,
+      rgba(161, 36, 29, 1) 50%,
+      rgba(192, 48, 40, 1) 100%
+   );
    border-color: #7a1e19;
 }
 
 .Fire {
-   background-color: #f08030;
+   background: rgb(240, 128, 48);
+   background: linear-gradient(
+      180deg,
+      rgba(240, 128, 48, 1) 0%,
+      rgba(209, 103, 27, 1) 50%,
+      rgba(240, 128, 48, 1) 100%
+   );
    border-color: #9e480b;
 }
 
 .Water {
-   background-color: #6890f0;
+   background: rgb(104, 144, 240);
+   background: linear-gradient(
+      180deg,
+      rgba(104, 144, 240, 1) 0%,
+      rgba(69, 111, 213, 1) 50%,
+      rgba(104, 144, 240, 1) 100%
+   );
    border-color: #3a6eeb;
 }
 
 .Flying {
-   background-color: #a890f0;
+   background: rgb(168, 144, 240);
+   background: linear-gradient(
+      180deg,
+      rgba(168, 144, 240, 1) 0%,
+      rgba(145, 122, 217, 1) 50%,
+      rgba(168, 144, 240, 1) 100%
+   );
    border-color: #8563ea;
 }
 
 .Grass {
-   background-color: #78c850;
+   background: rgb(120, 200, 80);
+   background: linear-gradient(
+      180deg,
+      rgba(120, 200, 80, 1) 0%,
+      rgba(90, 172, 49, 1) 50%,
+      rgba(120, 200, 80, 1) 100%
+   );
    border-color: #58a133;
 }
 
 .Poison {
-   background-color: #a040a0;
+   background: rgb(160, 64, 160);
+   background: linear-gradient(
+      180deg,
+      rgba(160, 64, 160, 1) 0%,
+      rgba(126, 40, 126, 1) 50%,
+      rgba(160, 64, 160, 1) 100%
+   );
    border-color: #7c317c;
 }
 
 .Electric {
-   background-color: #f8d030;
+   background: rgb(248, 208, 48);
+   background: linear-gradient(
+      180deg,
+      rgba(248, 208, 48, 1) 0%,
+      rgba(222, 182, 21, 1) 50%,
+      rgba(248, 208, 48, 1) 100%
+   );
    border-color: #ddb207;
 }
 
 .Ground {
-   background-color: #e0c068;
+   background: rgb(224, 192, 104);
+   background: linear-gradient(
+      180deg,
+      rgba(224, 192, 104, 1) 0%,
+      rgba(191, 160, 75, 1) 50%,
+      rgba(224, 192, 104, 1) 100%
+   );
    border-color: #d4a830;
 }
 
 .Psychic {
-   background-color: #f85888;
+   background: rgb(248, 88, 136);
+   background: linear-gradient(
+      180deg,
+      rgba(248, 88, 136, 1) 0%,
+      rgba(213, 57, 104, 1) 50%,
+      rgba(248, 88, 136, 1) 100%
+   );
    border-color: #f5175a;
 }
 
 .Rock {
-   background-color: #b8a038;
+   background: rgb(184, 160, 56);
+   background: linear-gradient(
+      180deg,
+      rgba(184, 160, 56, 1) 0%,
+      rgba(161, 138, 38, 1) 50%,
+      rgba(184, 160, 56, 1) 100%
+   );
    border-color: #917e2c;
 }
 
 .Ice {
-   background-color: #98d8d8;
+   background: rgb(152, 216, 216);
+   background: linear-gradient(
+      180deg,
+      rgba(152, 216, 216, 1) 0%,
+      rgba(128, 200, 200, 1) 50%,
+      rgba(152, 216, 216, 1) 100%
+   );
    border-color: #4ebcbc;
 }
 
 .Bug {
-   background-color: #a8b820;
+   background: rgb(168, 184, 32);
+   background: linear-gradient(
+      180deg,
+      rgba(168, 184, 32, 1) 0%,
+      rgba(146, 161, 22, 1) 50%,
+      rgba(168, 184, 32, 1) 100%
+   );
    border-color: #808d18;
 }
 
 .Dragon {
-   background-color: #7038f8;
+   background: rgb(112, 56, 248);
+   background: linear-gradient(
+      180deg,
+      rgba(112, 56, 248, 1) 0%,
+      rgba(93, 41, 221, 1) 50%,
+      rgba(112, 56, 248, 1) 100%
+   );
    border-color: #4808e4;
 }
 
 .Ghost {
-   background-color: #705898;
+   background: rgb(112, 88, 152);
+   background: linear-gradient(
+      180deg,
+      rgba(112, 88, 152, 1) 0%,
+      rgba(90, 66, 131, 1) 50%,
+      rgba(112, 88, 152, 1) 100%
+   );
    border-color: #483962;
 }
 
 .Dark {
-   background-color: #705848;
+   background: rgb(112, 88, 72);
+   background: linear-gradient(
+      180deg,
+      rgba(112, 88, 72, 1) 0%,
+      rgba(98, 74, 57, 1) 50%,
+      rgba(112, 88, 72, 1) 100%
+   );
    border-color: #3c2f27;
 }
 
 .Steel {
-   background-color: #b8b8d0;
+   background: rgb(184, 184, 208);
+   background: linear-gradient(
+      180deg,
+      rgba(184, 184, 208, 1) 0%,
+      rgba(156, 156, 189, 1) 50%,
+      rgba(184, 184, 208, 1) 100%
+   );
    border-color: #66669a;
 }
 
 .Fairy {
-   background-color: #ee99ac;
+   background: rgb(238, 153, 172);
+   background: linear-gradient(
+      180deg,
+      rgba(238, 153, 172, 1) 0%,
+      rgba(219, 134, 153, 1) 50%,
+      rgba(238, 153, 172, 1) 100%
+   );
    border-color: #9b6470;
 }

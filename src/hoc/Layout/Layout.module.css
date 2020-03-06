@@ -27,6 +27,10 @@
    margin-top: 5vh;
 }
 
+.Logo1 {
+   margin-right: -5px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
    .Spinning {
       animation: spin infinite 6s ease;
