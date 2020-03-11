@@ -12,19 +12,19 @@ import resultReducer from './store/reducers/result';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const rootReducer = combineReducers({
-   search: searchReducer,
-   result: resultReducer
+    search: searchReducer,
+    result: resultReducer
 });
 
 const store = createStore(
-   rootReducer,
-   composeEnhancers(applyMiddleware(thunk))
+    rootReducer,
+    composeEnhancers(applyMiddleware(thunk))
 );
 
 const app = (
-   <Provider store={store}>
-      <App />
-   </Provider>
+    <Provider store={store}>
+        <App />
+    </Provider>
 );
 
 ReactDOM.render(app, document.getElementById('root'));

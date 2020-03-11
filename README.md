@@ -8,6 +8,7 @@ Powered by: PokeAPI (https://pokeapi.co/).
 -  React 16.12
 -  Redux
 -  Styled Components
+-  React-Transition-Group
 -  CSS Modules
 
 ## TO-DO
@@ -15,7 +16,6 @@ Powered by: PokeAPI (https://pokeapi.co/).
 -  Pokemon Moves
 -  Pokemon Base Stats - in progress, value bar to be added
 
--  Input Validation
 -  Responsive Mobile Design
 
 -  Landing components - info, how to use etc.

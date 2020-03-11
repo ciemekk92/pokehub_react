@@ -1,28 +1,21 @@
 import React, { useState } from 'react';
 import Button from '../../components/UI/Button/Button';
 import SearchInput from '../../components/UI/SearchInput/SearchInput';
+import styled from 'styled-components';
 import { connect } from 'react-redux';
 import * as actions from '../../store/actions/index';
+
+const Error = styled.p`
+   text-align: center;
+   color: red;
+   font-size: 16px;
+`;
 
 const Search = props => {
    const [searchQuery, setSearchQuery] = useState({
       value: '',
       valid: false
    });
-
-   // TBI - input validation
-   /* const checkValidity = value => {
-      let isValid = true;
-      if (
-         (typeof value === 'number' && value.length <= 3 && value.length > 0) ||
-         (typeof value === 'string' && value.length > 0)
-      ) {
-         isValid = true;
-      } else {
-         isValid = false;
-      }
-      return isValid;
-   }; */
 
    const inputChangedHandler = event => {
       setSearchQuery({ value: event.target.value });
@@ -65,13 +58,26 @@ const Search = props => {
                Random!
             </Button>
          </div>
+         {props.error ? (
+            <Error>
+               {props.error.message === 'Request failed with status code 404'
+                  ? 'Pokemon not found! Try again!'
+                  : props.error.message === 'Network Error'
+                  ? 'Check your internet connection!'
+                  : props.error.message ===
+                    `Cannot read property 'front_default' of undefined`
+                  ? 'Search query must not be empty! Type something!'
+                  : props.error.message}
+            </Error>
+         ) : null}
       </React.Fragment>
    );
 };
 
 const mapStateToProps = state => {
    return {
-      displayResult: state.result.displayResult
+      displayResult: state.result.displayResult,
+      error: state.result.error
    };
 };
 

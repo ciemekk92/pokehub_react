@@ -1,5 +1,11 @@
 .AbilityBox {
-   background-color: #ff9f3b;
+   background: #ff9f3b;
+   background: linear-gradient(
+      180deg,
+      rgba(255, 159, 59, 1) 0%,
+      rgba(193, 106, 16, 1) 50%,
+      rgba(255, 159, 59, 1) 100%
+   );
    color: black;
    margin: 10px 20px 10px 0;
    width: 33%;

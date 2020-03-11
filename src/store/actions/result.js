@@ -14,15 +14,22 @@ export const resetBox = () => {
    };
 };
 
-export const enableBox = () => {
+export const enableLoading = () => {
    return {
-      type: actionTypes.ENABLE_BOX
+      type: actionTypes.ENABLE_LOADING
    };
 };
 
-export const fetchResultFailed = () => {
+export const disableLoading = () => {
    return {
-      type: actionTypes.FETCH_RESULT_FAILED
+      type: actionTypes.DISABLE_LOADING
+   };
+};
+
+export const fetchResultFailed = error => {
+   return {
+      type: actionTypes.FETCH_RESULT_FAILED,
+      error: error
    };
 };
 
@@ -37,14 +44,19 @@ export const nextResult = query => {
 
 export const initResult = query => {
    return dispatch => {
+      dispatch(enableLoading());
       axios
          .get(`https://pokeapi.co/api/v2/pokemon/${query}`)
          .then(response => {
-            dispatch(setResult(response.data));
-            console.log(response.data);
+            dispatch(disableLoading());
+            if (response.data.sprites.front_default) {
+               setTimeout(() => {
+                  dispatch(setResult(response.data));
+               }, 100);
+            }
          })
          .catch(error => {
-            dispatch(fetchResultFailed());
+            dispatch(fetchResultFailed(error));
          });
    };
 };

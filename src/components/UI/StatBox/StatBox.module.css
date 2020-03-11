@@ -10,31 +10,67 @@
 }
 
 .Hp {
-   background-color: red;
+   background: rgb(255, 0, 0);
+   background: linear-gradient(
+      180deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(180, 0, 0, 1) 50%,
+      rgba(255, 0, 0, 1) 100%
+   );
    border-color: #c00;
 }
 
 .Attack {
-   background-color: #f08030;
+   background: rgb(240, 128, 48);
+   background: linear-gradient(
+      180deg,
+      rgba(240, 128, 48, 1) 0%,
+      rgba(209, 103, 27, 1) 50%,
+      rgba(240, 128, 48, 1) 100%
+   );
    border-color: #dd6510;
 }
 
 .Defense {
-   background-color: #f8d030;
+   background: rgb(248, 208, 48);
+   background: linear-gradient(
+      180deg,
+      rgba(248, 208, 48, 1) 0%,
+      rgba(222, 182, 21, 1) 50%,
+      rgba(248, 208, 48, 1) 100%
+   );
    border-color: #edbf08;
 }
 
 .Special-attack {
-   background-color: #6890f0;
+   background: rgb(104, 144, 240);
+   background: linear-gradient(
+      180deg,
+      rgba(104, 144, 240, 1) 0%,
+      rgba(69, 111, 213, 1) 50%,
+      rgba(104, 144, 240, 1) 100%
+   );
    border-color: #3a6eeb;
 }
 
 .Special-defense {
-   background-color: #78c850;
+   background: rgb(120, 200, 80);
+   background: linear-gradient(
+      180deg,
+      rgba(120, 200, 80, 1) 0%,
+      rgba(90, 172, 49, 1) 50%,
+      rgba(120, 200, 80, 1) 100%
+   );
    border-color: #58a133;
 }
 
 .Speed {
-   background-color: #f85888;
+   background: rgb(248, 88, 136);
+   background: linear-gradient(
+      180deg,
+      rgba(248, 88, 136, 1) 0%,
+      rgba(213, 57, 104, 1) 50%,
+      rgba(248, 88, 136, 1) 100%
+   );
    border-color: #f62765;
 }

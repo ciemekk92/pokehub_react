@@ -16,26 +16,35 @@
    color: white;
 }
 
-.MainLogo {
-   margin: 1vh 0 1vh 0;
-   height: 20vmin;
-   pointer-events: none;
+.LogoContainer {
+   flex-direction: row;
+}
+
+.Logo1,
+.Spinning,
+.Logo2 {
+   height: 15vh;
+   margin-top: 5vh;
+}
+
+.Logo1 {
+   margin-right: -5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-   .MainLogo {
-      animation: MainLogo-float infinite 6s linear;
+   .Spinning {
+      animation: spin infinite 6s ease;
    }
 }
 
-@keyframes MainLogo-float {
+@keyframes spin {
    from {
-      transform: translateY(0);
+      transform: rotate(0deg);
    }
    50% {
-      transform: translateY(5vh);
+      transform: rotate(360deg);
    }
    to {
-      transform: translateY(0);
+      transform: rotate(0deg);
    }
 }
