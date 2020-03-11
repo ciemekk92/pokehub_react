@@ -22,6 +22,10 @@ export const removeDashes = string => {
     return string.replace(/-/g, ' ');
 };
 
+export const removeUnderscores = string => {
+    return string.replace(/_/g, ' ');
+};
+
 export const romanize = number => {
     let base = {
         X: 10,
@@ -38,4 +42,14 @@ export const romanize = number => {
         }
     }
     return roman;
+};
+
+export const removeDuplicateObjects = array => {
+    return array.filter((e, i) => {
+        return (
+            array.findIndex(x => {
+                return x.moveName === e.moveName && x.level === e.level;
+            }) === i
+        );
+    });
 };

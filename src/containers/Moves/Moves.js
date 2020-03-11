@@ -94,7 +94,6 @@ const Moves = props => {
 
     const generationAccordions = () => {
         const entries = Object.entries(sortMoves());
-        console.log(entries);
         let accordions = entries.map(element =>
             // skipping not-necessary entries
             element[0] !== 'other' ? (
@@ -113,7 +112,6 @@ const Moves = props => {
                             ].join(' ')
                         )}
                         data={element[1]}
-                        value={'Value will be inserted here.'}
                     />
                 ) : null
             ) : null

@@ -16,7 +16,7 @@
     border: none;
     outline: none;
     transition: background-color 0.6s ease;
-    box-shadow: 2px 2px 5px 0px rgba(44, 44, 44, 1);
+    box-shadow: 2px 2px 5px 0 rgba(44, 44, 44, 1);
 }
 
 .MoveButton:hover,
@@ -41,11 +41,54 @@
     overflow: hidden;
     transition: max-height 0.6s ease;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .MovesChevron {
-    margin-left: 0;
+    margin-left: auto;
     transition: transform 0.6s ease;
+}
+
+.MethodContainer {
+    width: 100%;
+    margin-right: 5px;
+    background-color: #ffcd99;
+    border-radius: 15px;
+}
+
+.GenerationRow {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 1% 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.MoveContainer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: #ee9d47;
+    width: 95%;
+    margin: 1% auto;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.MoveName,
+.MoveLevel {
+    font-size: 14px;
+}
+
+.MoveName {
+    margin: auto 5px;
+}
+
+.MoveLevel {
+    margin: auto 5px auto auto;
 }
 
 .rotate {
