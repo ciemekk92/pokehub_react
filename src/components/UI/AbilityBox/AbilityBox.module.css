@@ -1,73 +1,73 @@
 .AbilityBox {
-   background: #ff9f3b;
-   background: linear-gradient(
-      180deg,
-      rgba(255, 159, 59, 1) 0%,
-      rgba(193, 106, 16, 1) 50%,
-      rgba(255, 159, 59, 1) 100%
-   );
-   color: black;
-   margin: 10px 20px 10px 0;
-   width: 33%;
-   height: 6vh;
-   border-radius: 15px;
-   box-shadow: 3px 3px 5px 0px rgba(44, 44, 44, 1);
-   font-family: 'Roboto Condensed';
+    background: #ff9f3b;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 159, 59, 1) 0%,
+        rgba(193, 106, 16, 1) 50%,
+        rgba(255, 159, 59, 1) 100%
+    );
+    color: black;
+    margin: 10px 20px 10px 0;
+    width: 33%;
+    height: 6vh;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0 rgba(44, 44, 44, 1);
+    font-family: 'Roboto Condensed';
 }
 
 .Type {
-   margin: 2px 0 0 5px;
-   font-size: 10px;
-   text-align: left;
-   flex: none;
+    margin: 2px 0 0 5px;
+    font-size: 10px;
+    text-align: left;
+    flex: none;
 }
 
 .Value {
-   font-size: 14px;
-   text-align: center;
-   font-weight: 500;
-   margin: 5px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    margin: 5px 0 0 0;
 }
 
 .Hidden {
-   font-size: 10px;
-   text-align: center;
-   flex: none;
-   margin-top: -2%;
+    font-size: 10px;
+    text-align: center;
+    flex: none;
+    margin-top: -2%;
 }
 
 /* Small PCs */
 
 @media only screen and (max-width: 1023px) {
-   .AbilityBox {
-      margin: 5px 5px 0 0;
-   }
+    .AbilityBox {
+        margin: 5px 5px 0 0;
+    }
 
-   .Type {
-      font-size: 8px;
-   }
+    .Type {
+        font-size: 8px;
+    }
 }
 
 /* Ipad portrait */
 
 @media only screen and (max-width: 1023px) {
-   .AbilityBox {
-      width: 80%;
-   }
+    .AbilityBox {
+        width: 80%;
+    }
 }
 
 /* less than Ipad - phones */
 @media only screen and (max-width: 767px) {
-   .AbilityBox {
-      width: 90%;
-      height: 8vh;
-   }
+    .AbilityBox {
+        width: 90%;
+        height: 8vh;
+    }
 
-   .Type {
-      font-size: 8px;
-   }
+    .Type {
+        font-size: 8px;
+    }
 
-   .Value {
-      font-size: 12px;
-   }
+    .Value {
+        font-size: 12px;
+    }
 }

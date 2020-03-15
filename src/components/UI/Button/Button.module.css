@@ -1,30 +1,30 @@
 .Button {
-   background-color: transparent;
-   border: 1px solid white;
-   border-radius: 15px;
-   color: white;
-   outline: none;
-   cursor: pointer;
-   font: inherit;
-   padding: 10px;
-   margin: 10px;
-   font-family: 'Roboto Condensed';
-   font-size: 16px;
-   transition: 0.3s;
-   box-shadow: 2px 2px 5px 0px rgb(5, 5, 5);
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Roboto Condensed';
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px 0 rgb(5, 5, 5);
 }
 
 .Search {
-   border-color: #14a76c;
-   color: #14a76c;
+    border-color: #14a76c;
+    color: #14a76c;
 }
 
 .Search:hover {
-   color: #f07b3f;
-   border-color: #f07b3f;
+    color: #f07b3f;
+    border-color: #f07b3f;
 }
 
 .Button:disabled {
-   color: #ccc;
-   cursor: not-allowed;
+    color: #ccc;
+    cursor: not-allowed;
 }

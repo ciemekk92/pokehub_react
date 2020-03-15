@@ -26,7 +26,7 @@ const Moves = props => {
         };
         props.moves.forEach(outer => {
             outer.version_group_details.forEach(inner => {
-                let versionName = '';
+                let versionName;
                 switch (inner.version_group.name) {
                     case 'yellow':
                         versionName = 'yellow_Generation1';
@@ -85,7 +85,8 @@ const Moves = props => {
                 generations[versionName].push({
                     moveName: outer.move.name,
                     level: inner.level_learned_at,
-                    method: inner.move_learn_method.name
+                    method: inner.move_learn_method.name,
+                    game: inner.version_group.name
                 });
             });
         });
@@ -94,7 +95,7 @@ const Moves = props => {
 
     const generationAccordions = () => {
         const entries = Object.entries(sortMoves());
-        let accordions = entries.map(element =>
+        return entries.map(element =>
             // skipping not-necessary entries
             element[0] !== 'other' ? (
                 // checking if generation isn't empty
@@ -116,7 +117,6 @@ const Moves = props => {
                 ) : null
             ) : null
         );
-        return accordions;
     };
 
     return <React.Fragment>{generationAccordions()}</React.Fragment>;

@@ -1,0 +1,93 @@
+.DetailsContainer {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: #ee9d47;
+    width: 95%;
+    margin: 2% auto;
+    border-radius: 15px;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
+    cursor: default;
+}
+
+.DetailsName,
+.DetailsLevel {
+    font-size: 14px;
+}
+
+.DetailsName {
+    margin: 0 0 0 5px;
+}
+
+.DetailsLevel {
+    margin: 0 0 0 20px;
+}
+
+.DetailsButton {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    background-color: #ee9d47;
+    width: 95%;
+    margin: 1% auto;
+    border-radius: 15px;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
+    cursor: default;
+    border: none;
+}
+
+.DetailsButton:hover,
+.active {
+    background-color: #e08526;
+    border-radius: 15px;
+    outline: none;
+}
+
+.DetailsChevron {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.DetailsContent {
+    width: 95%;
+    background-color: #ffbc77;
+    margin: 1% auto;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.DetailBox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.DetailParagraph {
+    color: black;
+    font-size: 14px;
+    width: 95%;
+    text-align: left;
+    margin: 0.5%;
+}
+
+.DetailType {
+    color: black;
+    width: 95%;
+    font-size: 14px;
+    margin: 0.5% 0.5% 1% 0.5%;
+    border-radius: 15px;
+}

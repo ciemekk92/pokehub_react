@@ -7,44 +7,44 @@
 */
 
 .Content {
-   background-color: #272727;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-size: calc(10px + 2vmin);
-   color: white;
+    background-color: #272727;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .LogoContainer {
-   flex-direction: row;
+    flex-direction: row;
 }
 
 .Logo1,
 .Spinning,
 .Logo2 {
-   height: 15vh;
-   margin-top: 5vh;
+    height: 15vh;
+    margin-top: 5vh;
 }
 
 .Logo1 {
-   margin-right: -5px;
+    margin-right: -5px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-   .Spinning {
-      animation: spin infinite 6s ease;
-   }
+    .Spinning {
+        animation: spin infinite 6s ease;
+    }
 }
 
 @keyframes spin {
-   from {
-      transform: rotate(0deg);
-   }
-   50% {
-      transform: rotate(360deg);
-   }
-   to {
-      transform: rotate(0deg);
-   }
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
 }

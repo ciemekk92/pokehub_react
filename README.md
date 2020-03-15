@@ -1,26 +1,26 @@
 ## PokeHub_React - README
 
 Author: Przemysław Reducha.
-Powered by: PokeAPI (https://pokeapi.co/).
+Powered by: **PokeAPI** (https://pokeapi.co/).
 
 ## Tech stack:
 
--  React 16.12
--  Redux
--  Styled Components
--  React-Transition-Group
--  CSS Modules
+-   React 16.12
+-   Redux
+-   Styled Components
+-   React-Transition-Group
+-   CSS Modules
 
 ## TO-DO
 
--  Pokemon Moves
--  Pokemon Base Stats - in progress, value bar to be added
+-   Pokemon Moves
+-   Pokemon Base Stats - in progress, value bar to be added
 
--  Responsive Mobile Design
+-   Responsive Mobile Design
 
--  Landing components - info, how to use etc.
--  CSS Transitions
--  Styling clean-up
--  Lazy loading
+-   Landing components - info, how to use etc.
+-   CSS Transitions
+-   Styling clean-up
+-   Lazy loading
 
--  Folder restructuring
+-   Folder restructuring

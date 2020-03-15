@@ -3,11 +3,10 @@ import Chevron from '../Chevron/Chevron';
 import classes from './MovesAccordion.module.css';
 import {
     removeDuplicateObjects,
-    removeDashes,
     removeUnderscores,
-    capitalizeAllFirstLetters,
     capitalizeFirstLetter
 } from '../../../shared/utility';
+import MoveDetails from '../MoveDetails/MoveDetails';
 
 const MovesAccordion = props => {
     const [setActive, setActiveState] = useState('');
@@ -19,7 +18,9 @@ const MovesAccordion = props => {
     const toggleAccordion = () => {
         setActiveState(setActive === '' ? 'active' : '');
         setHeightState(
-            setActive === 'active' ? '0px' : `${content.current.scrollHeight}px`
+            setActive === 'active'
+                ? '0px'
+                : `${content.current.scrollHeight + 500}px`
         );
         setRotateState(setActive === 'active');
     };
@@ -33,7 +34,7 @@ const MovesAccordion = props => {
             other: []
         };
         props.data.forEach(element => {
-            let methodName = '';
+            let methodName;
             switch (element.method) {
                 case 'level-up':
                     methodName = 'level_Up';
@@ -57,7 +58,7 @@ const MovesAccordion = props => {
     };
     const renderData = object => {
         const methodEntries = Object.entries(object);
-        let methods = methodEntries.map(element =>
+        return methodEntries.map(element =>
             // skipping unnecessary methods
             element[0] !== 'other' ? (
                 // checking if certain method isn't empty
@@ -70,30 +71,21 @@ const MovesAccordion = props => {
                             // sorting by level
                             .sort((a, b) => (a.level > b.level ? 1 : -1))
                             .map(move => (
-                                <div
-                                    className={classes.MoveContainer}
+                                <MoveDetails
                                     key={
                                         move.moveName +
                                         Math.floor(Math.random() * 100)
                                     }
-                                >
-                                    <p className={classes.MoveName}>
-                                        {capitalizeAllFirstLetters(
-                                            removeDashes(move.moveName)
-                                        )}
-                                    </p>
-                                    <p className={classes.MoveLevel}>
-                                        {element[0] === 'level_Up'
-                                            ? move.level
-                                            : null}
-                                    </p>
-                                </div>
+                                    name={move.moveName}
+                                    method={element[0]}
+                                    level={move.level}
+                                    game={move.game}
+                                />
                             ))}
                     </div>
                 ) : null
             ) : null
         );
-        return methods;
     };
 
     return (
