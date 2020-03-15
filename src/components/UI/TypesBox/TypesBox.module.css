@@ -1,11 +1,12 @@
 .TypesBox {
     font-size: 16px;
     color: black;
-    margin: 10px 20px 10px 0;
+    margin: 1%;
     border-radius: 15px;
-    width: 90%;
+    width: 85%;
     border: 2px solid white;
     box-shadow: 3px 3px 5px 0 rgb(44, 44, 44);
+    height: 38px;
 }
 
 .Normal {

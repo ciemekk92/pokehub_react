@@ -7,8 +7,8 @@
 .MoveButton {
     margin: 0 1vw 5px 1vw;
     background-color: #ff9f3b;
-    height: 4vh;
     border-radius: 15px;
+    height: 25px;
     color: #444;
     cursor: pointer;
     display: flex;
