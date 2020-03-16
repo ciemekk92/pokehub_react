@@ -15,6 +15,16 @@
     box-shadow: 2px 2px 5px 0 rgb(5, 5, 5);
 }
 
+.Search {
+    border-color: #14a76c;
+    color: #14a76c;
+}
+
+.Search:hover {
+    color: #f07b3f;
+    border-color: #f07b3f;
+}
+
 .Button:disabled {
     color: #ccc;
     cursor: not-allowed;
