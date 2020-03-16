@@ -9,6 +9,18 @@
     height: 38px;
 }
 
+.Type {
+    margin: 2px 0 0 5px;
+    font-size: 10px;
+    text-align: left;
+}
+
+.Value {
+    font-size: 18px;
+    text-align: center;
+    margin: -5px auto auto auto;
+}
+
 .Normal {
     background: rgb(168, 168, 120);
     background: linear-gradient(
@@ -84,6 +96,7 @@
         rgba(160, 64, 160, 1) 100%
     );
     border-color: #7c317c;
+    color: white;
 }
 
 .Electric {
@@ -161,6 +174,7 @@
         rgba(112, 56, 248, 1) 100%
     );
     border-color: #4808e4;
+    color: white;
 }
 
 .Ghost {
@@ -172,6 +186,7 @@
         rgba(112, 88, 152, 1) 100%
     );
     border-color: #483962;
+    color: white;
 }
 
 .Dark {
@@ -183,6 +198,7 @@
         rgba(112, 88, 72, 1) 100%
     );
     border-color: #3c2f27;
+    color: white;
 }
 
 .Steel {
@@ -205,4 +221,20 @@
         rgba(238, 153, 172, 1) 100%
     );
     border-color: #9b6470;
+}
+
+@media only screen and (max-width: 767px) {
+    .TypesBox {
+        height: 28px;
+        box-shadow: 1px 1px 3px 0 rgb(44, 44, 44);
+    }
+
+    .Type {
+        font-size: 6px;
+    }
+
+    .Value {
+        font-size: 10px;
+        margin: auto;
+    }
 }

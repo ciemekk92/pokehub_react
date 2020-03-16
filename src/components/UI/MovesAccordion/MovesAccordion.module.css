@@ -26,6 +26,7 @@
 }
 
 .MoveName {
+    /*noinspection CssNoGenericFontName*/
     font-family: 'Roboto Condensed';
     color: black;
     font-size: 14px;
@@ -53,9 +54,15 @@
 
 .MethodContainer {
     width: 100%;
-    margin-right: 5px;
+    margin: 0.5%;
     background-color: #ffcd99;
     border-radius: 15px;
+}
+
+.MethodTitle {
+    font-size: 24px;
+    margin: 1%;
+    color: black;
 }
 
 .GenerationRow {
@@ -66,39 +73,23 @@
     flex-direction: row;
 }
 
-.MoveContainer {
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    background-color: #ee9d47;
-    width: 95%;
-    margin: 2% auto;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
-    cursor: default;
-}
-
-.MoveName,
-.MoveLevel {
-    font-size: 14px;
-}
-
 .MoveName {
     margin: auto 5px;
-}
-
-.MoveLevel {
-    margin: auto 5px auto auto;
+    font-size: 14px;
 }
 
 .rotate {
     transform: rotate(90deg);
 }
 
-.MoveValue {
-    font-size: 14px;
-    color: black;
-    padding: 18px;
+@media only screen and (max-width: 1023px) {
+    .GenerationRow {
+        flex-direction: column;
+    }
+    .MethodContainer {
+        margin: 0.5% 0;
+    }
+    .MoveButton {
+        box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
+    }
 }

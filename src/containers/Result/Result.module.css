@@ -58,14 +58,6 @@
     box-sizing: border-box;
 }
 
-/* Small PCs */
-
-@media only screen and (max-width: 1200px) {
-    .Box {
-        width: 70%;
-    }
-}
-
 /* Ipad portrait */
 
 @media only screen and (max-width: 1023px) {

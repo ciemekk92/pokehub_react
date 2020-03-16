@@ -4,7 +4,7 @@ import { capitalizeFirstLetter } from '../../shared/utility';
 import StatBox from '../../components/UI/StatBox/StatBox';
 
 const Stats = props => {
-    let baseStats = props.stats
+    return props.stats
         .map(element => (
             <StatBox
                 key={element.stat.name}
@@ -13,7 +13,6 @@ const Stats = props => {
             />
         ))
         .reverse();
-    return baseStats;
 };
 
 const mapStateToProps = state => {

@@ -28,38 +28,20 @@
     margin: -5px auto auto auto;
 }
 
-/* Small PCs */
-
-@media only screen and (max-width: 1023px) {
-    .DataBox {
-        margin: 5px 5px 0 0;
-    }
-
-    .Type {
-        font-size: 8px;
-    }
-}
-
-/* Ipad portrait */
-
-@media only screen and (max-width: 1023px) {
-    .DataBox {
-        width: 80%;
-    }
-}
-
 /* less than Ipad - phones */
 @media only screen and (max-width: 767px) {
     .DataBox {
-        width: 90%;
-        height: 8vh;
+        height: 30px;
+        box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
     }
 
     .Type {
-        font-size: 8px;
+        font-size: 6px;
+        margin-left: 6px;
     }
 
     .Value {
         font-size: 12px;
+        margin: auto;
     }
 }
