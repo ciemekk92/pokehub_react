@@ -21,6 +21,11 @@
     margin: -5px auto auto auto;
 }
 
+.Type,
+.Value {
+    cursor: default;
+}
+
 .Normal {
     background: rgb(168, 168, 120);
     background: linear-gradient(

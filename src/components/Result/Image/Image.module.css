@@ -11,6 +11,7 @@
     margin: 5px auto 0 0;
     font-size: 8px;
     text-align: left;
+    cursor: default;
 }
 
 @media only screen and (max-width: 767px) {

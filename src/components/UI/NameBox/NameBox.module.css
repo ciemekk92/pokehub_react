@@ -27,6 +27,11 @@
     margin: 0 auto 5px auto;
 }
 
+.Type,
+.Value {
+    cursor: default;
+}
+
 /* Small PCs */
 
 @media only screen and (max-width: 1023px) {

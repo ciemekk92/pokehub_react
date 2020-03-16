@@ -25,23 +25,23 @@ const Landing = () => {
             </p>
 
             <h2 className={classes.H2}>What type of data can I get here?</h2>
-            <p className={classes.Normal}>
-                All about Pokemon! Here goes:
-                <ul>
-                    <li>Name / ID</li>
-                    <img
-                        className={classes.Charizard}
-                        src={charizard}
-                        alt={'PokeImage'}
-                    />
-                    <li>Sprites</li>
-                    <li>Types</li>
-                    <li>Abilities</li>
-                    <li>Metrics</li>
-                    <li>Base Stats</li>
-                    <li>Moves in certain Generation</li>
-                </ul>
-            </p>
+            <p className={classes.Normal}>All about Pokemon! Here goes:</p>
+            <ul>
+                <li className={classes.ListItem}>Name / ID</li>
+                <img
+                    className={classes.Charizard}
+                    src={charizard}
+                    alt={'PokeImage'}
+                />
+                <li className={classes.ListItem}>Sprites</li>
+                <li className={classes.ListItem}>Types</li>
+                <li className={classes.ListItem}>Abilities</li>
+                <li className={classes.ListItem}>Metrics</li>
+                <li className={classes.ListItem}>Base Stats</li>
+                <li className={classes.ListItem}>
+                    Moves in certain Generation
+                </li>
+            </ul>
 
             <h2 className={classes.H2}>How does it work?</h2>
             <p className={classes.Normal}>

@@ -13,6 +13,10 @@
     border-radius: 15px;
     box-shadow: 3px 3px 5px 0 rgba(44, 44, 44, 1);
 }
+.Type,
+.Value {
+    cursor: default;
+}
 
 .Type {
     margin: 2px 0 0 5px;

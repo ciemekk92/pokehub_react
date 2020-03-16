@@ -37,6 +37,12 @@
     margin-top: -2%;
 }
 
+.Type,
+.Value,
+.Hidden {
+    cursor: default;
+}
+
 /* less than Ipad - phones */
 @media only screen and (max-width: 767px) {
     .AbilityBox {
