@@ -20,7 +20,7 @@ const MovesAccordion = props => {
         setHeightState(
             setActive === 'active'
                 ? '0px'
-                : `${content.current.scrollHeight + 500}px`
+                : `${content.current.scrollHeight + 1500}px`
         );
         setRotateState(setActive === 'active');
     };
@@ -64,7 +64,11 @@ const MovesAccordion = props => {
                 // checking if certain method isn't empty
                 element[1].length !== 0 ? (
                     <div className={classes.MethodContainer} key={element[0]}>
-                        {capitalizeFirstLetter(removeUnderscores(element[0]))}
+                        <p className={classes.MethodTitle}>
+                            {capitalizeFirstLetter(
+                                removeUnderscores(element[0])
+                            )}
+                        </p>
                         {removeDuplicateObjects(element[1])
                             // sorting by name
                             .sort((a, b) => (a.moveName < b.moveName ? 1 : -1))
@@ -122,4 +126,4 @@ const MovesAccordion = props => {
     );
 };
 
-export default MovesAccordion;
+export default React.memo(MovesAccordion);

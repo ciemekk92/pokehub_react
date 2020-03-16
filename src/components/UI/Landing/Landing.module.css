@@ -1,0 +1,45 @@
+.Landing {
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ffbc77;
+}
+
+.Link {
+    color: #c16a10;
+    text-decoration: none;
+}
+
+.Small {
+    font-size: 12px;
+}
+
+.Normal {
+    font-size: 16px;
+}
+
+.H1 {
+    font-size: 36px;
+}
+
+.H2 {
+    font-size: 30px;
+}
+
+.H1,
+.H2,
+.Normal,
+.Small {
+    margin: 1%;
+}
+
+.Blastoise,
+.Charizard,
+.Venusaur {
+    float: right;
+}
+
+.Blastoise {
+    bottom: 5%;
+}
+
+/* Ipad portrait */

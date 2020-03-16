@@ -49,6 +49,7 @@ const Search = props => {
                 changed={inputChangedHandler}
                 valid={searchQuery.valid}
                 value={searchQuery.value}
+                submit={searchHandler}
             />
             <div>
                 <Button clicked={searchHandler} btnType="Search">

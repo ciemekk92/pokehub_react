@@ -11,6 +11,11 @@ const SearchInput = props => (
             onChange={props.changed}
             placeholder={'Type in Pokemon name or ID'}
             value={props.value}
+            onKeyDown={event => {
+                if (event.key === 'Enter') {
+                    props.submit();
+                }
+            }}
         ></input>
     </React.Fragment>
 );
