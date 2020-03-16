@@ -1,26 +1,26 @@
 .App {
-   text-align: center;
+    text-align: center;
 }
 
 .App-header {
-   background-color: #282c34;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-size: calc(10px + 2vmin);
-   color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-   color: #61dafb;
+    color: #61dafb;
 }
 
 .fade-slide-enter {
 }
 
 .fade-slide-enter-active {
-   animation: openResult 0.4s ease-out;
+    animation: openResult 0.4s ease-out;
 }
 
 .fade-slide-exit {
@@ -30,11 +30,11 @@
 }
 
 @keyframes openResult {
-   0% {
-      opacity: 0;
-   }
+    0% {
+        opacity: 0;
+    }
 
-   100% {
-      opacity: 1;
-   }
+    100% {
+        opacity: 1;
+    }
 }
