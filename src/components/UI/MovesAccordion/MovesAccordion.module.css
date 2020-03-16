@@ -26,14 +26,13 @@
 }
 
 .MoveName {
-    /*noinspection CssNoGenericFontName*/
-    font-family: 'Roboto Condensed';
     color: black;
     font-size: 14px;
     font-weight: 500;
     box-sizing: border-box;
     margin: auto;
     text-align: center;
+    font-family: 'Pixel Digivolve';
 }
 
 .MovesContent {

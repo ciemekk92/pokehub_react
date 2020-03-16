@@ -1,12 +1,17 @@
 /*noinspection CssUnknownTarget*/
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500&display=swap');
+@font-face {
+    font-family: 'Pixel Digivolve';
+    src: local('Pixel Digivolve'),
+        url('./fonts/Pixel Digivolve.otf') format('opentype');
+}
 
 body {
     overflow-y: scroll;
     margin: 0;
-    font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont,
-        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-        'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Pixel Digivolve', 'Roboto Condensed', -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+        'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

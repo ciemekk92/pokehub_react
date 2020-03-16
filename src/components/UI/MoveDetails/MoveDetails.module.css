@@ -24,6 +24,7 @@
     box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
     cursor: default;
     border: none;
+    font-family: 'Pixel Digivolve';
 }
 
 .DetailsButton:hover,
