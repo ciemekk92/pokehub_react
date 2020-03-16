@@ -9,6 +9,20 @@
     box-shadow: 3px 3px 5px 0 rgba(44, 44, 44, 1);
 }
 
+.Type {
+    margin: 2px 0 0 5px;
+    font-size: 10px;
+    text-align: left;
+    flex: none;
+}
+
+.Value {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    margin: -5px auto auto auto;
+}
+
 .Hp {
     background: rgb(255, 0, 0);
     background: linear-gradient(
@@ -73,4 +87,21 @@
         rgba(248, 88, 136, 1) 100%
     );
     border-color: #f62765;
+}
+
+@media only screen and (max-width: 767px) {
+    .StatBox {
+        height: 28px;
+        box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
+    }
+
+    .Type {
+        font-size: 6px;
+        margin-left: 3px;
+    }
+
+    .Value {
+        font-size: 12px;
+        margin: auto;
+    }
 }
