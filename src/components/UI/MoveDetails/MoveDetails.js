@@ -90,7 +90,10 @@ const MoveDetails = props => {
                             )}
                         </p>
                         <p className={classes.DetailParagraph}>
-                            <strong>Power:</strong> {setDetails.power}
+                            <strong>Power:</strong>{' '}
+                            {setDetails.power === null
+                                ? 'N/A'
+                                : setDetails.power}
                         </p>
                         <p className={classes.DetailParagraph}>
                             <strong>PP:</strong> {setDetails.pp}

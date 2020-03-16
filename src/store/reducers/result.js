@@ -15,7 +15,8 @@ const initialState = {
     moves: [],
     displayResult: false,
     error: null,
-    loading: false
+    loading: false,
+    loaded: false
 };
 
 const setResult = (state, action) => {
@@ -32,7 +33,8 @@ const setResult = (state, action) => {
         abilities: action.result.abilities,
         moves: action.result.moves,
         error: null,
-        displayResult: true
+        displayResult: true,
+        loaded: true
     });
 };
 

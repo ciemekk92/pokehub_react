@@ -23,8 +23,8 @@
 .Logo1,
 .Spinning,
 .Logo2 {
-    height: 15vh;
-    margin-top: 5vh;
+    height: 150px;
+    margin-top: 5%;
 }
 
 .Logo1 {
@@ -46,5 +46,17 @@
     }
     to {
         transform: rotate(0deg);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Logo1,
+    .Spinning,
+    .Logo2 {
+        height: 65px;
+    }
+
+    .Spinning {
+        margin-right: -3px;
     }
 }

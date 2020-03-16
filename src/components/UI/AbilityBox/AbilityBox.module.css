@@ -7,11 +7,12 @@
         rgba(255, 159, 59, 1) 100%
     );
     color: black;
-    margin: 10px 20px 10px 0;
+    margin: 1%;
     width: 33%;
-    height: 6vh;
+    height: 40px;
     border-radius: 15px;
     box-shadow: 3px 3px 5px 0 rgba(44, 44, 44, 1);
+    /*noinspection CssNoGenericFontName*/
     font-family: 'Roboto Condensed';
 }
 
@@ -26,7 +27,7 @@
     font-size: 14px;
     text-align: center;
     font-weight: 500;
-    margin: 5px 0 0 0;
+    margin: -2px auto 0 auto;
 }
 
 .Hidden {
@@ -36,38 +37,24 @@
     margin-top: -2%;
 }
 
-/* Small PCs */
-
-@media only screen and (max-width: 1023px) {
-    .AbilityBox {
-        margin: 5px 5px 0 0;
-    }
-
-    .Type {
-        font-size: 8px;
-    }
-}
-
-/* Ipad portrait */
-
-@media only screen and (max-width: 1023px) {
-    .AbilityBox {
-        width: 80%;
-    }
-}
-
 /* less than Ipad - phones */
 @media only screen and (max-width: 767px) {
     .AbilityBox {
-        width: 90%;
-        height: 8vh;
+        height: 30px;
+        box-shadow: 1px 1px 3px 0 rgba(44, 44, 44, 1);
     }
 
     .Type {
-        font-size: 8px;
+        font-size: 6px;
+        margin-left: 10px;
     }
 
     .Value {
-        font-size: 12px;
+        font-size: 10px;
+        margin: auto;
+    }
+
+    .Hidden {
+        font-size: 8px;
     }
 }

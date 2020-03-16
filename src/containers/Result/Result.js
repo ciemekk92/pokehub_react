@@ -27,7 +27,7 @@ const Result = props => {
                             : null
                     }`}
                 >
-                    <div className={classes.BoxRow}>
+                    <div className={classes.BoxRow} style={{ width: '97%' }}>
                         <Sprites />
                         <NameId />
                     </div>
@@ -38,10 +38,10 @@ const Result = props => {
                         </div>
                         <Types />
                     </div>
-                    <div className={classes.BoxRow}>
+                    <div className={classes.BoxRow} style={{ width: '98%' }}>
                         <Stats />
                     </div>
-                    <div className={classes.BoxColumn}>
+                    <div className={classes.BoxColumn} style={{ margin: '1%' }}>
                         <Moves />
                     </div>
                 </div>
