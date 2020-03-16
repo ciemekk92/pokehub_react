@@ -49,16 +49,16 @@
     }
 
     .Type {
-        font-size: 6px;
+        font-size: 5px;
         margin-left: 10px;
     }
 
     .Value {
-        font-size: 10px;
+        font-size: 8px;
         margin: auto;
     }
 
     .Hidden {
-        font-size: 8px;
+        font-size: 5px;
     }
 }

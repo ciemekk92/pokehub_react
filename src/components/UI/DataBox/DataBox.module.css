@@ -40,12 +40,12 @@
     }
 
     .Type {
-        font-size: 6px;
+        font-size: 5px;
         margin-left: 6px;
     }
 
     .Value {
-        font-size: 12px;
+        font-size: 10px;
         margin: auto;
     }
 }

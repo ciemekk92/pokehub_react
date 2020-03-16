@@ -61,7 +61,7 @@
     border-color: #edbf08;
 }
 
-.Special-attack {
+.Sp-ATK {
     background: rgb(104, 144, 240);
     background: linear-gradient(
         180deg,
@@ -72,7 +72,7 @@
     border-color: #3a6eeb;
 }
 
-.Special-defense {
+.Sp-DEF {
     background: rgb(120, 200, 80);
     background: linear-gradient(
         180deg,
@@ -101,8 +101,8 @@
     }
 
     .Type {
-        font-size: 6px;
-        margin-left: 3px;
+        font-size: 5px;
+        margin-left: 2px;
     }
 
     .Value {
