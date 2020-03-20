@@ -8,7 +8,6 @@ Powered by: **PokeAPI** (https://pokeapi.co/).
 -   React 16.12
 -   Redux
 -   Axios
--   Styled Components
 -   React-Transition-Group
 -   CSS Modules
 
