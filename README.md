@@ -2,6 +2,7 @@
 
 Author: **Przemysław Reducha**.
 Powered by: **PokeAPI** (https://pokeapi.co/).
+Working demo: https://pokehubreact.firebaseapp.com/
 
 ## Tech stack:
 
