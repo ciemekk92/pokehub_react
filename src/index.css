@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'Pixel Digivolve';
     src: local('Pixel Digivolve'),
-        url('./fonts/Pixel Digivolve.otf') format('opentype');
+        url('./fonts/Pixel Digivolve.ttf') format('truetype');
 }
 
 body {

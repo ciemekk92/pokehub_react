@@ -6,7 +6,7 @@ import venusaur from '../../../assets/venusaur.png';
 
 const Landing = () => {
     return (
-        <div className={classes.Landing}>
+        <section className={classes.Landing}>
             <img
                 className={classes.Venusaur}
                 src={venusaur}
@@ -26,13 +26,13 @@ const Landing = () => {
 
             <h2 className={classes.H2}>What type of data can I get here?</h2>
             <p className={classes.Normal}>All about Pokemon! Here goes:</p>
+            <img
+                className={classes.Charizard}
+                src={charizard}
+                alt={'PokeImage'}
+            />
             <ul>
                 <li className={classes.ListItem}>Name / ID</li>
-                <img
-                    className={classes.Charizard}
-                    src={charizard}
-                    alt={'PokeImage'}
-                />
                 <li className={classes.ListItem}>Sprites</li>
                 <li className={classes.ListItem}>Types</li>
                 <li className={classes.ListItem}>Abilities</li>
@@ -83,7 +83,7 @@ const Landing = () => {
                     PokeAPI.
                 </a>
             </p>
-        </div>
+        </section>
     );
 };
 

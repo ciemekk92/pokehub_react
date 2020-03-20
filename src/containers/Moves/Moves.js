@@ -119,7 +119,7 @@ const Moves = props => {
         );
     };
 
-    return <React.Fragment>{generationAccordions()}</React.Fragment>;
+    return generationAccordions();
 };
 
 const mapStateToProps = state => {

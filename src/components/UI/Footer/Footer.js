@@ -7,7 +7,7 @@ const Footer = props => {
             <div className={classes.Phantom} />
             <div className={classes.Footer}>
                 <p className={classes.Paragraph}>
-                    PokeHub &copy;2020 by Przemysław Reducha. Powered by&nbsp;
+                    PokeHub &copy;2020 by Przemyslaw Reducha. Powered by&nbsp;
                     <a className={classes.Link} href={'https://pokeapi.co'}>
                         PokeAPI
                     </a>

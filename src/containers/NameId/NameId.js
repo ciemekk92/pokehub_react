@@ -5,13 +5,13 @@ import NameBox from '../../components/UI/NameBox/NameBox';
 
 const NameId = props => {
     return (
-        <React.Fragment>
+        <>
             <NameBox
                 type="Name"
                 value={capitalizeAllFirstLetters(removeDashes(props.name))}
             />
             <NameBox type="ID" value={'#' + props.id} />
-        </React.Fragment>
+        </>
     );
 };
 

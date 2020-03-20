@@ -15,7 +15,7 @@ const App = props => {
         results = <Result />;
     }
     return (
-        <React.Fragment>
+        <>
             <Layout>
                 <Search />
 
@@ -43,7 +43,7 @@ const App = props => {
                 {results}
                 <Footer />
             </Layout>
-        </React.Fragment>
+        </>
     );
 };
 
