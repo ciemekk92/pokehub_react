@@ -1,6 +1,8 @@
 ## PokeHub_React - README
 
-Author: **Przemysław Reducha**.
+Single page application, that allows the user to find information about any Pokemon and display it in compact, responsive layout.
+
+#### Author: Przemysław Reducha
 Powered by: **PokeAPI** (https://pokeapi.co/).
 Working demo: https://pokehubreact.firebaseapp.com/
 
@@ -11,6 +13,11 @@ Working demo: https://pokehubreact.firebaseapp.com/
 -   Axios
 -   React-Transition-Group
 -   CSS Modules
+
+## How to run:
+
+1. Try the live demo https://pokehubreact.firebaseapp.com/
+2. Download / clone the repository and run `npm install` in the downloaded directory to install all dependencies and then run `npm run start`.
 
 ## TODO
 
